@@ -18,7 +18,6 @@ jobs:
         with:
           java-version: "25"
           distribution: "temurin"
-          cache: maven
 
       - name: Build with Maven
-        run: cd 'backend ' && ./mvnw clean verify
+        run: cd 'backend ' && chmod +x ./mvnw && ./mvnw clean verify
